@@ -7,4 +7,4 @@
 https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
 
 
-
+https://www.javadoop.com/post/metaspace
