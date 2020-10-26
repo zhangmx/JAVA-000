@@ -30,7 +30,7 @@ DirectMemory、 ~~非jvm内的内存~~
 ## renew:
 
 修改后：
-![v2](relation_2.png)
+![v3](relation_3.png)
 
 [比较好看的图](https://stackoverflow.com/a/20094595)：是2013年的，[Perm Gen已经从java8移除，新增了metaspace](https://stackoverflow.com/a/22525669)
 
@@ -39,3 +39,6 @@ DirectMemory、 ~~非jvm内的内存~~
 参考内容： 
 - https://www.journaldev.com/2856/java-jvm-memory-model-memory-management-in-java
 - https://dzone.com/articles/java-memory-management
+
+## 别人的优秀作业
+![](JVM内存结构.png)
