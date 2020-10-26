@@ -6,7 +6,7 @@
 javac .\GCLogAnalysis.java
 ```
 报错：
-![编译错误](compiler_error.png)
+![编译错误](images\compiler_error.png)
 
 ```
 javac -encoding UTF8 .\GCLogAnalysis.java
@@ -15,7 +15,7 @@ javac -encoding UTF8 .\GCLogAnalysis.java
 ```
 java -XX:+PrintGCDetails GCLogAnalysis
 ```
-![](gcdetail_1.png)
+![](images\gcdetail_1.png)
 2. 记录到日志
 ```
 java -Xloggc:gc.demo.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
@@ -24,7 +24,7 @@ java -Xloggc:gc.demo.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysi
 ```
 java -Xmx128M -XX:+PrintGCDetails GCLogAnalysis
 ```
-MetaSpace基本没有变化![内存分配小了之后，频繁GC直到oom](gcdetail_2.png)
+MetaSpace基本没有变化![内存分配小了之后，频繁GC直到oom](images\gcdetail_2.png)
 4. 512m,1024m,2048m,4086m
 
 ```
@@ -35,24 +35,24 @@ java -Xmx4G -XX:+PrintGCDetails GCLogAnalysis
 ```
 Xmx 超过一定值后，情况不再变化
 
-![](gcdetail_3_512.png)
-![](gcdetail_4_1G.png)
-![](gcdetail_5_2G.png)
-![](gcdetail_6_4G.png)
+![](images\gcdetail_3_512.png)
+![](images\gcdetail_4_1G.png)
+![](images\gcdetail_5_2G.png)
+![](images\gcdetail_6_4G.png)
 5. 串行GC
 ```
 java -XX:+UseSerialGC -Xms512m -Xmx512m -Xloggc:gc.demo.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
 java -XX:+UseSerialGC -Xms512m -Xmx512m -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
 java -XX:+UseSerialGC -Xms512m -Xmx512m -XX:+PrintGC GCLogAnalysis
 ```
-![](gcdetail_7.png)
+![](images\gcdetail_7.png)
 6. 并行
 ```
 java -XX:+UseParallelGC -Xms512m -Xmx512m -Xloggc:gc.demo.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
 java -XX:+UseParallelGC -Xms512m -Xmx512m -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
 java -XX:+UseParallelGC -Xms512m -Xmx512m -XX:+PrintGC GCLogAnalysis
 ```
-![](gcdetail_8.png)
+![](images\gcdetail_8.png)
 7. UseConcMarkSweepGC CMS
 
 ```
@@ -61,15 +61,15 @@ java -XX:+UseConcMarkSweepGC -Xms512m -Xmx512m -Xloggc:gc.demo.log -XX:+PrintGCD
 java -XX:+UseConcMarkSweepGC -Xms512m -Xmx512m -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis
 java -XX:+UseConcMarkSweepGC -Xms512m -Xmx512m -XX:+PrintGC GCLogAnalysis
 ```
-![](gcdetail_9.png)
+![](images\gcdetail_9.png)
 8. UseG1GC
 
 ```
 java -XX:+UseG1GC -Xms512m -Xmx512m -XX:+PrintGC GCLogAnalysis
 ```
-![](gcdetail10.png)
+![](images\gcdetail10.png)
 4G
 ```
 java -XX:+UseG1GC -Xms4G -Xmx4G -XX:+PrintGC GCLogAnalysis
 ```
-![](gcdetail11.png)
+![](images\gcdetail11.png)
