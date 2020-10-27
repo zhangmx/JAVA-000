@@ -12,7 +12,7 @@ java -jar gateway-server-0.0.1-SNAPSHOT.jar
 sb -c 40 -N 30 -u http://localhost:8088/api/hello
 ```
 
-![](sb_1.png)
+![](images/sb_1.png)
 
 windows install wrk
 
