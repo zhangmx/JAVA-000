@@ -36,3 +36,19 @@ sudo cp wrk /usr/local/bin
 ---
 ### 压测过程
 
+03:11:16,视频开始点
+
+```
+java -jar -Xms1g -Xmx1g gateway-server-0.0.1-SNAPSHOT.jar
+```
+- 执行压测：【12线程，40连接，30秒】
+```
+wrk -t12 -c40 -d30s --latency http://zmx.dev:8088/api/hello
+```
+- 结果：
+![](images/wrk_1g.png)
+![](images/wrk_1g_cpu_mem.png)
+> 发现压测的时候，虽然是12线程，但是16个cpu全部100%，而内存几乎没变化
+```
+jps -lvm
+```
