@@ -6,11 +6,11 @@
 
 ## 周作业
 
-1. [使用 GCLogAnalysis.java 自己演练一遍串行/并行/CMS/G1的案例。](homework_1/readme.md)
-2. [使用压测工具（wrk或sb），演练gateway-server-0.0.1-SNAPSHOT.jar 示例。](homework_2/readme.md)[总结](homework_2&1_summary/readme.md)
-3. [(选做)如果自己本地有可以运行的项目，可以按照2的方式进行演练。](homework_3/readme.md)
-4. [(可选)运行课上的例子，以及Netty的例子，分析相关现象。](homework_4/readme.md)
-5. [写一段代码，使用HttpClient或OkHttp访问 http://localhost:8801](homework_5/readme.md)
+1. [使用 GCLogAnalysis.java 自己演练一遍串行/并行/CMS/G1的案例。](homework_1)
+2. [使用压测工具（wrk或sb），演练gateway-server-0.0.1-SNAPSHOT.jar 示例。](homework_2)[总结](homework_2&1_summary/readme.md)
+3. [(选做)如果自己本地有可以运行的项目，可以按照2的方式进行演练。](homework_3)
+4. [(可选)运行课上的例子，以及Netty的例子，分析相关现象。](homework_4)
+5. [写一段代码，使用HttpClient或OkHttp访问 http://localhost:8801](homework_5)
 
 ## Windows
 
