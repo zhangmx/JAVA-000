@@ -13,6 +13,7 @@ https://mkyong.com/java/apache-httpclient-examples/?__cf_chl_captcha_tk__=b5cff3
 
 - https://github.com/apache/httpcomponents-client
 - https://github.com/square/okhttp
+- https://square.github.io/okhttp
 
 
 OkHttp has HTTP/2, a built-in response cache, web sockets, and a simpler API. It’s got better defaults and is easier to use efficiently. It’s got a better URL model, a better cookie model, a better headers model and a better call model. OkHttp makes canceling calls easy. OkHttp has carefully managed TLS defaults that are secure and widely compatible. Okhttp works with Retrofit, which is a brilliant API for REST. It also works with Okio, which is a great library for data streams. OkHttp is a small library with one small dependency (Okio) and is less code to learn. OkHttp is more widely deployed, with a billion Android 4.4+ devices using it internally.

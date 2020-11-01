@@ -24,20 +24,35 @@ public class FakeServer {
 
     public static void main(String[] args) {
         mockServer = ClientAndServer.startClientAndServer(8801);
-        mockServer.when(
-                request()
-                        .withMethod("GET")
-                        .withPath(""))
-                .respond(response()
-                        .withStatusCode(200)
-                        .withBody("hello")
+        mockServer
+                .when(
+                        request()
+                                .withMethod("GET")
+                                .withPath(""))
+                .respond(
+                        response()
+                                .withStatusCode(200)
+                                .withBody("hello")
+                );
+
+        new MockServerClient("127.0.0.1", 8801)
+                .when(
+                        request()
+                                .withMethod("POST")
+                                .withPath(""),
+                        exactly(3)
+                )
+                .respond(
+                        response()
+                                .withStatusCode(200)
+                                .withBody(" TO BE !")
                 );
 
 //        new MockServerClient("127.0.0.1", 8801)
 //                .when(
 //                        request()
-//                                .withMethod("GET")
-//                                .withPath("/xx"),
+//                                .withMethod("POST")
+//                                .withPath(""),
 //                        exactly(3)
 //                )
 //                .forward(
