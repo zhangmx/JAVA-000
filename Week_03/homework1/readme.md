@@ -13,3 +13,20 @@
 ### 验证
 
 用户（client）请求网关端口，可以获取到后端服务返回的内容。
+
+## 老师供图：
+![](task.png)
+
+## 遇到一个okhttp的bug
+
+提示找不到方法 java.lang.NoSuchMethodError: kotlin.collections.ArraysKt.copyInto([B[BIII)[B 
+
+通过添加最新的kotlin标准库弄好了：
+> https://stackoverflow.com/questions/57330923/okhttp-nosuchmethoderror-copyinto-in-tlsutil
+```xml
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib</artifactId>
+            <version>1.3.70</version>
+        </dependency>
+```
