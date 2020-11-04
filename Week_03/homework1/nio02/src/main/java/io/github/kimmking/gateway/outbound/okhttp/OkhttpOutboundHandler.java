@@ -3,10 +3,7 @@ package io.github.kimmking.gateway.outbound.okhttp;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.handler.codec.http.DefaultFullHttpResponse;
-import io.netty.handler.codec.http.FullHttpRequest;
-import io.netty.handler.codec.http.FullHttpResponse;
-import io.netty.handler.codec.http.HttpUtil;
+import io.netty.handler.codec.http.*;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -30,7 +27,12 @@ public class OkhttpOutboundHandler {
 
     public void handle(FullHttpRequest fullRequest, ChannelHandlerContext ctx) {
         final String url = this.backendUrl + fullRequest.uri();
-        Request request = new Request.Builder().url(url).build();
+        Request.Builder builder = new Request.Builder();
+
+        fullRequest.headers().forEach(stringStringEntry -> {
+            builder.addHeader(stringStringEntry.getKey(),stringStringEntry.getValue());
+        });
+        Request request = builder.url(url).build();
 
         try (Response response = client.newCall(request).execute()) {
             handleResponse(fullRequest, ctx, response);
