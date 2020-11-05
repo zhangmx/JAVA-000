@@ -16,6 +16,18 @@ public class FakeServer {
 
     public static void main(String[] args) {
         mockServer = ClientAndServer.startClientAndServer(serverPort);
+
+        mockServer
+                .when(
+                        request()
+                                .withMethod("GET")
+                                .withPath("/admin"))
+                .respond(
+                        response()
+                                .withStatusCode(200)
+                                .withBody("admin page")
+                );
+
         mockServer
                 .when(
                         request()
@@ -26,6 +38,7 @@ public class FakeServer {
                                 .withStatusCode(200)
                                 .withBody("hello")
                 );
+
 
 //        new MockServerClient("127.0.0.1", serverPort)
 //                .when(

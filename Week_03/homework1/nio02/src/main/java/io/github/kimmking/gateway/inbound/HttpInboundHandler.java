@@ -1,5 +1,6 @@
 package io.github.kimmking.gateway.inbound;
 
+import io.github.kimmking.gateway.filter.AuthRequestFilterImp;
 import io.github.kimmking.gateway.filter.HttpRequestFilter;
 import io.github.kimmking.gateway.filter.HttpRequestFilterImp;
 import io.github.kimmking.gateway.outbound.httpclient4.HttpOutboundHandler;
@@ -16,11 +17,13 @@ public class HttpInboundHandler extends ChannelInboundHandlerAdapter {
     private static final Logger logger = LoggerFactory.getLogger(HttpInboundHandler.class);
     private final OkhttpOutboundHandler handler;
     private final HttpRequestFilter httpRequestFilter;
+    private final HttpRequestFilter authRequestFilter;
     
     public HttpInboundHandler(String proxyServer) {
 //        handler = new HttpOutboundHandler(proxyServer);
         handler = new OkhttpOutboundHandler(proxyServer);
         httpRequestFilter = new HttpRequestFilterImp();
+        authRequestFilter = new AuthRequestFilterImp();
     }
     
     @Override
@@ -31,15 +34,19 @@ public class HttpInboundHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
         try {
-            logger.info("channelRead流量接口请求开始，内容为{}", msg.toString());
+//            logger.info("channelRead流量接口请求开始，内容为{}", msg.toString());
             FullHttpRequest fullRequest = (FullHttpRequest) msg;
             String uri = fullRequest.uri();
             logger.info("接收到的请求url为{}", uri);
 //            if (uri.contains("/test")) {
 //                handlerTest(fullRequest, ctx);
 //            }
+            authRequestFilter.filter(fullRequest,ctx);
+
             httpRequestFilter.filter(fullRequest,ctx);
+            logger.info(" ");
             handler.handle(fullRequest, ctx);
+            logger.info(" 返回了响应");
     
         } catch(Exception e) {
             e.printStackTrace();
