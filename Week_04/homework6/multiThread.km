@@ -3,7 +3,8 @@
         "data": {
             "id": "c6z6or201gg0",
             "created": 1604970861524,
-            "text": "JAVA并发"
+            "text": "JAVA并发",
+            "expandState": "expand"
         },
         "children": [
             {
@@ -11,14 +12,17 @@
                     "id": "c6z6ugug7y80",
                     "created": 1604971309485,
                     "text": "原则",
-                    "expandState": "expand"
+                    "expandState": "expand",
+                    "layout": null
                 },
                 "children": [
                     {
                         "data": {
                             "id": "c6z6pc0b9a80",
                             "created": 1604970907134,
-                            "text": "可见性"
+                            "text": "可见性",
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": []
                     },
@@ -26,7 +30,9 @@
                         "data": {
                             "id": "c6z6p6jzduw0",
                             "created": 1604970895263,
-                            "text": "原子性"
+                            "text": "原子性",
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": []
                     },
@@ -34,7 +40,9 @@
                         "data": {
                             "id": "c6z6p85c86w0",
                             "created": 1604970898731,
-                            "text": "有序性"
+                            "text": "有序性",
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": []
                     }
@@ -44,14 +52,18 @@
                 "data": {
                     "id": "c6z6wwzzbvk0",
                     "created": 1604971501376,
-                    "text": "模式"
+                    "text": "模式",
+                    "expandState": "expand",
+                    "layout": null
                 },
                 "children": [
                     {
                         "data": {
                             "id": "c6z6xb0271c0",
                             "created": 1604971531856,
-                            "text": "信号通知"
+                            "text": "信号通知",
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": []
                     },
@@ -59,7 +71,9 @@
                         "data": {
                             "id": "c6z6xeov0c80",
                             "created": 1604971539886,
-                            "text": "等待会合"
+                            "text": "等待会合",
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": []
                     },
@@ -67,7 +81,9 @@
                         "data": {
                             "id": "c6z6xncqrk80",
                             "created": 1604971558744,
-                            "text": "互斥锁"
+                            "text": "互斥锁",
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": []
                     },
@@ -75,7 +91,9 @@
                         "data": {
                             "id": "c6z6yj9efts0",
                             "created": 1604971628199,
-                            "text": "屏障"
+                            "text": "屏障",
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": []
                     },
@@ -83,7 +101,9 @@
                         "data": {
                             "id": "c6z6yu70wig0",
                             "created": 1604971652000,
-                            "text": "多重检查"
+                            "text": "多重检查",
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": []
                     },
@@ -91,7 +111,9 @@
                         "data": {
                             "id": "c6z6z4dsd4g0",
                             "created": 1604971674176,
-                            "text": "读写锁"
+                            "text": "读写锁",
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": []
                     },
@@ -99,7 +121,9 @@
                         "data": {
                             "id": "c6z70dple8w0",
                             "created": 1604971772846,
-                            "text": "线程内变量"
+                            "text": "线程内变量",
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": []
                     }
@@ -109,21 +133,27 @@
                 "data": {
                     "id": "c6z6wykp40g0",
                     "created": 1604971504805,
-                    "text": "相关类"
+                    "text": "相关类",
+                    "expandState": "expand",
+                    "layout": null
                 },
                 "children": [
                     {
                         "data": {
                             "id": "c6z6zgtezvk0",
                             "created": 1604971701243,
-                            "text": "线程创建"
+                            "text": "线程创建",
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": [
                             {
                                 "data": {
                                     "id": "c6z6zqf6rr40",
                                     "created": 1604971722150,
-                                    "text": "Thread"
+                                    "text": "Thread",
+                                    "expandState": "expand",
+                                    "layout": null
                                 },
                                 "children": []
                             },
@@ -131,7 +161,9 @@
                                 "data": {
                                     "id": "c6z6zu6ej4o0",
                                     "created": 1604971730326,
-                                    "text": "ThreadPool（4种）"
+                                    "text": "ThreadPool（4种）",
+                                    "expandState": "expand",
+                                    "layout": null
                                 },
                                 "children": []
                             }
@@ -141,7 +173,9 @@
                         "data": {
                             "id": "c6z72piypfk0",
                             "created": 1604971955294,
-                            "text": "容器"
+                            "text": "容器",
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": []
                     },
@@ -149,14 +183,18 @@
                         "data": {
                             "id": "c6z73y5ead40",
                             "created": 1604972052429,
-                            "text": "返回值"
+                            "text": "返回值",
+                            "expandState": "expand",
+                            "layout": null
                         },
                         "children": [
                             {
                                 "data": {
                                     "id": "c6z7448m86o0",
                                     "created": 1604972065685,
-                                    "text": "Future"
+                                    "text": "Future",
+                                    "expandState": "expand",
+                                    "layout": null
                                 },
                                 "children": []
                             }
@@ -168,13 +206,405 @@
                 "data": {
                     "id": "c6z757xkjjc0",
                     "created": 1604972152088,
-                    "text": "CAS"
+                    "text": "无锁谓CAS",
+                    "expandState": "expand",
+                    "layout": null
                 },
-                "children": []
+                "children": [
+                    {
+                        "data": {
+                            "id": "c6zm97s0hg00",
+                            "created": 1605014781857,
+                            "text": "仅仅是CPU层面的",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c6zm9cibiow0",
+                                    "created": 1605014792155,
+                                    "text": "同于volatile【不保证原子性】",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c6zlqbq20v40",
+                    "created": 1605013301527,
+                    "text": "Java.util.concurrency",
+                    "expandState": "expand",
+                    "layout": null
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c6zlqq6gm4g0",
+                            "created": 1605013332994,
+                            "text": "Locks",
+                            "expandState": "expand",
+                            "layout": null,
+                            "priority": 1
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c6zlv4upu7s0",
+                                    "created": 1605013678392,
+                                    "text": "Lock",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c6zlv8jhn6o0",
+                                    "created": 1605013686420,
+                                    "text": "ReadWriteLock",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c6zlvcatp0g0",
+                                    "created": 1605013694604,
+                                    "text": "Condition",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c6zm72vkkqg0",
+                                    "created": 1605014614460,
+                                    "text": "LockSupport",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c6zlz2jtd5s0",
+                            "created": 1605013986836,
+                            "text": "synchronized不如lock灵活",
+                            "priority": null,
+                            "progress": null,
+                            "background": "#c00000",
+                            "color": "#d9d9d9",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c6zlzb97ysw0",
+                                    "created": 1605014005786,
+                                    "text": "同步块的阻塞无法中断（不能Interruptibly）",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c6zm0fbarkw0",
+                                    "created": 1605014092984,
+                                    "text": "同步块的阻塞无法控制超时（无法自动解锁）",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c6zm0js8rhk0",
+                                    "created": 1605014102715,
+                                    "text": "同步块无法异步处理锁（即不能立即知道是否可以拿到锁）",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c6zm0noi7g80",
+                                    "created": 1605014111196,
+                                    "text": "同步块无法根据条件灵活的加锁解锁（即只能跟同步块范围一致）",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c6zlrhkvmcg0",
+                            "created": 1605013392639,
+                            "text": "Atomic",
+                            "font-weight": "bold",
+                            "expandState": "expand",
+                            "layout": null,
+                            "priority": 2
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c6zlrhqngow0",
+                                    "created": 1605013392988,
+                                    "text": "AtomicInteger",
+                                    "expandState": "expand",
+                                    "layout": null
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "c6zlrq95qdc0",
+                                            "created": 1605013411521,
+                                            "text": "AtomicStampedReference",
+                                            "expandState": "expand",
+                                            "layout": null
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "c6zlu21um000",
+                                                    "created": 1605013593929,
+                                                    "text": "LongAdder",
+                                                    "layout": null,
+                                                    "expandState": "expand"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c6zlstsdqo80",
+                            "created": 1605013497578,
+                            "text": "Executer",
+                            "layout": null,
+                            "priority": 3,
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c6zluih05so0",
+                                    "created": 1605013629674,
+                                    "text": "Future",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c6zlupz6yso0",
+                                    "created": 1605013646011,
+                                    "text": "Callable",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c6zluvnvx4w0",
+                                    "created": 1605013658388,
+                                    "text": "Executor",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c6zlsxm024o0",
+                            "created": 1605013505899,
+                            "text": "Tools【AQS-AbstractQueuedSynchronizer】",
+                            "layout": null,
+                            "priority": 4,
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c6zlt1eh9e80",
+                                    "created": 1605013514152,
+                                    "text": "CountDownLatch",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c6zlt9fuauo0",
+                                    "created": 1605013531648,
+                                    "text": "Semaphore",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c6zltcsu6ag0",
+                                    "created": 1605013538964,
+                                    "text": "CyclicBarrier",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c6zlqwvlhk00",
+                            "created": 1605013347574,
+                            "text": "Collection",
+                            "expandState": "expand",
+                            "layout": null,
+                            "priority": 5
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c6zluzvmgjs0",
+                                    "created": 1605013667563,
+                                    "text": "CopyOnWriteArrayList",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c6zlv2rgux40",
+                                    "created": 1605013673842,
+                                    "text": "ConcurrentMap",
+                                    "layout": null,
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c6zm7jba2ow0",
+                    "created": 1605014650239,
+                    "text": "Best Practice",
+                    "background": "#4bacc6",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c6zm7sn7tdk0",
+                            "created": 1605014670551,
+                            "text": "永远只在更新对象的成员变量时加锁",
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c6zm7wlqks00",
+                            "created": 1605014679169,
+                            "text": "永远只在访问可变的成员变量时加锁",
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "c6zm7zs2py00",
+                            "created": 1605014686083,
+                            "text": "永远不在调用其他对象的方法时加锁",
+                            "expandState": "expand"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "c6zm7ptbrxk0",
+                    "created": 1605014664390,
+                    "text": "异步返回值",
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "c6zmcy32o7s0",
+                            "created": 1605015074215,
+                            "text": "同线程",
+                            "background": "#00b050",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c6zmdhobh5k0",
+                                    "created": 1605015116858,
+                                    "text": "Future",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "c6zmdkluce00",
+                                    "created": 1605015123239,
+                                    "text": "FutureTask",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "c6zmda6xbug0",
+                            "created": 1605015100569,
+                            "text": "异步回调组合",
+                            "background": "#ffc000",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "c6zmde6j8io0",
+                                    "created": 1605015109253,
+                                    "text": "CompletableFuture",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
-    "template": "default",
-    "theme": "fresh-blue",
+    "template": "right",
+    "theme": "snow-compact",
     "version": "1.4.43"
 }

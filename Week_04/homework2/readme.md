@@ -2,4 +2,4 @@
 
 1. 硬等待(干等):Thread.sleep\CountDownLatch\CyclicBarrier
 2. 回调 Future\FutureTask\CompletableFuture
-3. 好像都要等
+3. 锁  ReentrantLock\synchronized 好像都要等wait

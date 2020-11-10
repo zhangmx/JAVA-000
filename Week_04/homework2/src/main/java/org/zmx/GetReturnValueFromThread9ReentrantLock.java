@@ -12,7 +12,7 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class GetReturnValueFromThread9ReentrantLock {
     final ReentrantLock lock = new ReentrantLock();
-    final Condition notDone  = lock.newCondition();
+    final Condition notDone = lock.newCondition();
     Integer sumResult = 0;
 
     public Integer getResult() throws InterruptedException {
@@ -24,6 +24,7 @@ public class GetReturnValueFromThread9ReentrantLock {
             lock.unlock();
         }
     }
+
     private void doSum() {
         lock.lock();
         try {
@@ -33,8 +34,9 @@ public class GetReturnValueFromThread9ReentrantLock {
             lock.unlock();
         }
     }
+
     /**
-     * 回调
+     * 锁
      */
     public static void main(String[] args) throws InterruptedException {
 
@@ -50,7 +52,7 @@ public class GetReturnValueFromThread9ReentrantLock {
         });
         // 异步执行 下面方法
         thread.start();
-        //这是得到的返回值
+        // 这是得到的返回值
 
         // 确保  拿到result 并输出
         System.out.println("异步计算结果为：" + worker.getResult());

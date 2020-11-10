@@ -21,11 +21,9 @@ public class GetReturnValueFromThread8CompletableFuture {
         long start = System.currentTimeMillis();
 
         // 在这里创建一个线程或线程池，
-
         // 异步执行 下面方法
         CompletableFuture<Integer> result = CompletableFuture.supplyAsync(GetReturnValueFromThread8CompletableFuture::sum);
-        //这是得到的返回值
-
+        // 这是得到的返回值
         // 确保  拿到result 并输出
         try {
             System.out.println("异步计算结果为：" + result.get());

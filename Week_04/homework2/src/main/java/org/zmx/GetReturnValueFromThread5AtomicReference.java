@@ -1,7 +1,5 @@
 package org.zmx;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
@@ -27,7 +25,7 @@ public class GetReturnValueFromThread5AtomicReference {
         });
         // 异步执行 下面方法
         worker.start();
-        //这是得到的返回值
+        // 这是得到的返回值
         while (result.get() == 0) {
             Thread.sleep(1000);
         }

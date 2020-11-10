@@ -20,7 +20,7 @@ public class GetReturnValueFromThread10synchronized {
     }
 
     /**
-     * 回调
+     * 锁
      */
     public static void main(String[] args) throws InterruptedException {
 
@@ -39,7 +39,7 @@ public class GetReturnValueFromThread10synchronized {
         });
         // 异步执行 下面方法
         thread.start();
-        //这是得到的返回值
+        // 这是得到的返回值
         synchronized (worker) {
             worker.wait();
         }

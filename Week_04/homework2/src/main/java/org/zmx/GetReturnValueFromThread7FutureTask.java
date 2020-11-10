@@ -20,7 +20,7 @@ public class GetReturnValueFromThread7FutureTask {
         long start = System.currentTimeMillis();
 
         // 在这里创建一个线程或线程池，
-        FutureTask<Integer> task =new FutureTask<Integer>(new Callable<Integer>() {
+        FutureTask<Integer> task = new FutureTask<Integer>(new Callable<Integer>() {
             @Override
             public Integer call() throws Exception {
                 return sum();
