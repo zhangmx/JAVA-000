@@ -9,11 +9,11 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 
-@Configuration
-@ComponentScan("com.zmx.jdbca.template.guide")
+//@Configuration
+//@ComponentScan("com.zmx.jdbca.template.guide")
 public class SpringJdbcConfig {
 
-    @Bean
+//    @Bean
     public DataSource dataSource() {
         return new EmbeddedDatabaseBuilder()
           .setType(EmbeddedDatabaseType.H2)
