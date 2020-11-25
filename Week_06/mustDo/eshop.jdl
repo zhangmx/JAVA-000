@@ -1,0 +1,88 @@
+/**
+ * 品牌表
+ * @author ZhangMingxing.
+ */
+entity Customer {
+	customerName String
+	avatar String
+	status Boolean
+    
+}
+
+/**
+ * 商品表
+ * @author ZhangMingxing.
+ */
+entity Commodity {
+	commodityName String
+    description String
+	// classify String
+    price BigDecimal
+	status Boolean
+    
+}
+/**
+ * 订单表
+ * @author ZhangMingxing.
+ */
+entity Orders {
+    orderId Integer
+	classify String
+    amount BigDecimal
+	status OrderStatus
+    invoice Boolean
+    createTime Instant
+}
+
+/**
+ * 订单里的商品
+ * @author ZhangMingxing.
+ */
+entity OrdersItem {
+    quantity Integer
+    amount BigDecimal
+	status OrderItemStatus
+    createTime Instant
+}
+
+/**
+ * 收货地址
+ * @author ZhangMingxing.
+ */
+entity ShippingAddress {
+    address String
+	contact String
+    contactPerson String
+    createTime Instant
+}
+
+enum OrderStatus {
+    COMPLETED, PENDING, CANCELLED
+}
+
+enum OrderItemStatus {
+    AVAILABLE, OUT_OF_STOCK, BACK_ORDER
+}
+
+/**
+ * relationship.
+ */
+
+relationship OneToOne {
+    Customer{user(login) required} to User
+}
+
+// relationship ManyToMany {
+//   	Orders{commodity(commodityName)} to Commodity{orderList}
+// }
+
+relationship OneToMany {
+  	Customer to Orders{customer(customerName)}
+  	Customer to ShippingAddress{customer(customerName)}
+    ShippingAddress  to Orders{shippingAddress(address)}
+}
+
+relationship ManyToOne {
+    OrdersItem{commodity(commodityName) required} to Commodity
+    OrdersItem{orderList(createTime)} to Orders
+}
