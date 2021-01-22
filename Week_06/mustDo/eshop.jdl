@@ -1,5 +1,5 @@
 /**
- * 品牌表
+ * 客户表
  * @author ZhangMingxing.
  */
 entity Customer {
